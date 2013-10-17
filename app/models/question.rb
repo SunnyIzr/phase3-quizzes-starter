@@ -7,7 +7,8 @@ class Question < ActiveRecord::Base
     {
       id: id,
       question: question,
-      choices: choices
+      choices: choices,
+      quiz_name: quiz.name
     }
   end
 end
